@@ -20,5 +20,7 @@ averagePopulation = totalPopulation / populationOfCounties.length;
 const totalPopulationElement = document.querySelector('span.total-population');
 const avgPopulationElement = document.querySelector('span.average-population');
 
-totalPopulationElement.textContent = totalPopulation;
-avgPopulationElement.textContent = Math.round(averagePopulation);
+totalPopulationElement.textContent = totalPopulation.toLocaleString('en-US');
+
+avgPopulationElement.textContent =
+  Math.round(averagePopulation).toLocaleString('en-US');
